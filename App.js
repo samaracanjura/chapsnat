@@ -8,6 +8,7 @@ import LoginScreen from "./screens/LoginScreen";
 import SignupScreen from "./screens/SignupScreen";
 import BottomTabNavigator from "./navigation/BottomTabNavigator";
 import firebase from "@firebase/app";
+import { ActionSheetProvider } from "@expo/react-native-action-sheet";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,7 @@ function App() {
   }, []);
 
   return (
+    <ActionSheetProvider>
     <View style={styles.container}>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Tabs">
@@ -45,6 +47,7 @@ function App() {
         <StatusBar style="auto" />
       </NavigationContainer>
     </View>
+    </ActionSheetProvider>
   );
 }
 

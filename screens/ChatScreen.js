@@ -46,7 +46,7 @@ export default function ChatScreen({ navigation, route }) {
         // current "blue bubble" user
         _id: "myidnumber",
         name: "Samara",
-        avatar: "https://dlisted.com/wp-content/uploads/2015/09/spl1129631_001-copy.jpg"
+        avatar: "https://assets.teenvogue.com/photos/58cc073934fff6436cff0a42/master/pass/kim-kardashian.jpg",
         //avatar: require ("../assets/crying_kiki.png"),
       }}
       inverted={false}
