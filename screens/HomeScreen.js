@@ -25,7 +25,7 @@ export default function HomeScreen({ navigation }) {
         data={chatList}
         renderItem={({ item }) => (
           <TouchableOpacity
-            onPress={() => navigation.navigate("Chat")}
+            onPress={() => navigation.navigate("Chat", {chatname:item.id})}
           >
             <Text style={styles.item}>{item.id}</Text>
           </TouchableOpacity>
@@ -38,7 +38,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "pink",
   },
   item: {
     padding: 10,
